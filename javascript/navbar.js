@@ -13,17 +13,17 @@ export function createNavbar(brandName, navLinks) {
 
       // Brand Name
       const brandSpan = document.createElement("span");
-      brandSpan.className = "navbar-brand mb-0 h2";
+      brandSpan.className = "navbar-brand order-1";
       brandSpan.textContent = this.brandName;
 
       // Add Links if any
       if (this.navLinks && this.navLinks.length > 0) {
         const navList = document.createElement("ul");
-        navList.className = "navbar-nav d-flex flex-row";
+        navList.className = "navbar-nav ms-auto d-flex flex-row order-3";
 
         this.navLinks.forEach((link) => {
           const listItem = document.createElement("li");
-          listItem.className = "nav-item me-3";
+          listItem.className = "nav-item mx-2";
 
           const anchor = document.createElement("a");
           anchor.classList = "nav-link";
